@@ -1,5 +1,7 @@
-local addonName = ...
+local _, addon = ...
 
 function Selll_OnAddonCompartmentClick()
-    Settings.OpenToCategory(addonName)
+    if addon and addon.settings and addon.settings.category then
+        Settings.OpenToCategory(addon.settings.category.ID)
+    end
 end

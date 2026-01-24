@@ -13,7 +13,6 @@ local settings = {
 
 function settings:Init()
     self.category, self.layout = Settings.RegisterVerticalLayoutCategory(name)
-    self.category.ID = name
 
     self.layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(addon.SettingsTitle))
     self:CreateProxiedCheckBox(addon.SafeSellText, addon.SafeSellHint, "safeSell")
