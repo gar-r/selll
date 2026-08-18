@@ -1,5 +1,5 @@
 ## Interface: 110007, 110100, 110105, 110107, 110200, 110205, 110207, 120000, 120005, 120007, 120100
-## Version: 1.1.14
+## Version: 1.1.15
 ## SavedVariables: SellConf
 ## Title: Sell[L]
 ## Notes: Sell Low Level Items Automatically
