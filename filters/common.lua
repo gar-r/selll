@@ -7,7 +7,7 @@ end
 
 addon.MatchItemType = function(item, matchType, matchSubType)
     local itemID = item:GetItemID()
-    local itemType, itemSubType = select(12, GetItemInfo(itemID))
+    local itemType, itemSubType = select(12, C_Item.GetItemInfo(itemID))
     if itemType == matchType then
         if not matchSubType then
             return true
@@ -31,6 +31,6 @@ local legacyExpacs = {
 }
 
 addon.IsItemFromOldXpac = function (item)
-    local xpac = select(15, GetItemInfo(item:GetItemID()))
+    local xpac = select(15, C_Item.GetItemInfo(item:GetItemID()))
     return legacyExpacs[xpac]
 end
